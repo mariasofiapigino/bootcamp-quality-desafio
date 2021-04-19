@@ -1,0 +1,110 @@
+[
+  {
+    "number": "BAPI-1235",
+    "origin": "Buenos Aires",
+    "destination": "Puerto Iguazú",
+    "seatType": "Economy",
+    "pricePerson": 6500,
+    "dateFrom": "2021-02-10",
+    "dateTo": "2021-02-15"
+  },
+  {
+    "number": "PIBA-1420",
+    "origin": "Puerto Iguazú",
+    "destination": "Bogotá",
+    "seatType": "Business",
+    "pricePerson": 43200,
+    "dateFrom": "2021-02-10",
+    "dateTo": "2021-02-20"
+  },
+  {
+    "number": "PIBA-1420",
+    "origin": "Puerto Iguazú",
+    "destination": "Bogotá",
+    "seatType": "Economy",
+    "pricePerson": 25735,
+    "dateFrom": "2021-02-10",
+    "dateTo": "2021-02-21"
+  },
+  {
+    "number": "BATU-5536",
+    "origin": "Buenos Aires",
+    "destination": "Tucumán",
+    "seatType": "Economy",
+    "pricePerson": 7320,
+    "dateFrom": "2021-02-10",
+    "dateTo": "2021-02-17"
+  },
+  {
+    "number": "TUPI-3369",
+    "origin": "Tucumán",
+    "destination": "Puerto Iguazú",
+    "seatType": "Business",
+    "pricePerson": 12530,
+    "dateFrom": "2021-02-12",
+    "dateTo": "2021-02-23"
+  },
+  {
+    "number": "TUPI-3369",
+    "origin": "Tucumán",
+    "destination": "Puerto Iguazú",
+    "seatType": "Economy",
+    "pricePerson": 5400,
+    "dateFrom": "2021-01-02",
+    "dateTo": "2021-01-16"
+  },
+  {
+    "number": "BOCA-4213",
+    "origin": "Bogotá",
+    "destination": "Cartagena",
+    "seatType": "Economy",
+    "pricePerson": 8000,
+    "dateFrom": "2021-01-23",
+    "dateTo": "2021-02-05"
+  },
+  {
+    "number": "CAME-0321",
+    "origin": "Cartagena",
+    "destination": "Medellín",
+    "seatType": "Economy",
+    "pricePerson": 7800,
+    "dateFrom": "2021-01-23",
+    "dateTo": "2021-01-31"
+  },
+  {
+    "number": "BOBA-6567",
+    "origin": "Bogotá",
+    "destination": "Buenos Aires",
+    "seatType": "Business",
+    "pricePerson": 57000,
+    "dateFrom": "2021-02-15",
+    "dateTo": "2021-02-28"
+  },
+  {
+    "number": "BOBA-6567",
+    "origin": "Bogotá",
+    "destination": "Buenos Aires",
+    "seatType": "Economy",
+    "pricePerson": 39860,
+    "dateFrom": "2021-03-01",
+    "dateTo": "2021-03-14"
+  },
+  {
+    "number": "BOME-4442",
+    "origin": "Bogotá",
+    "destination": "Medellín",
+    "seatType": "Economy",
+    "pricePerson": 11000,
+    "dateFrom": "2021-02-10",
+    "dateTo": "2021-02-24"
+  },
+  {
+    "number": "MEPI-9986",
+    "origin": "Medellín",
+    "destination": "Puerto Iguazú",
+    "seatType": "Business",
+    "pricePerson": 41640,
+    "dateFrom": "2021-04-17",
+    "dateTo": "2021-05-02"
+  }
+]

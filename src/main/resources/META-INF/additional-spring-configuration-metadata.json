@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "hotels_path",
+      "type": "java.lang.String",
+      "description": "Description for hotels_path."
+  }
+] }

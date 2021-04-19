@@ -1,0 +1,34 @@
+{
+  "username": "seba_gonzalez@unmail.com.ar",
+  "amount": 16400.0,
+  "interest": 1640.0,
+  "total": 18040.0,
+  "booking": {
+    "dateFrom": "10/02/2021",
+    "dateTo": "12/02/2021",
+    "destination": "Puerto Iguazú",
+    "hotelCode": "CH-0003",
+    "peopleAmount": 2,
+    "roomType": "doble",
+    "people": [
+      {
+        "dni": "12345678",
+        "name": "Pepito",
+        "lastname": "Gomez",
+        "birthDate": "10/11/1982",
+        "mail": "pepitogomez@gmail.com"
+      },
+      {
+        "dni": "13345678",
+        "name": "Fulanito",
+        "lastname": "Gomez",
+        "birthDate": "10/11/1983",
+        "mail": "fulanitogomez@gmail.com"
+      }
+    ]
+  },
+  "statusCode": {
+    "code": 200,
+    "message": "The process ended satisfactorily"
+  }
+}

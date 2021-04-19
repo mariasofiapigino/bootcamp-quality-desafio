@@ -1,0 +1,22 @@
+[
+  {
+    "hotelCode": "HB-0001",
+    "name": "Hotel Bristol",
+    "place": "Buenos Aires",
+    "typeRoom": "Single",
+    "nightPrice": 5435,
+    "availableFrom": "2021-02-10",
+    "availableUntil": "2021-03-19",
+    "reserved": false
+  },
+  {
+    "hotelCode": "BH-0002",
+    "name": "Hotel Bristol 2",
+    "place": "Buenos Aires",
+    "typeRoom": "Doble",
+    "nightPrice": 7200,
+    "availableFrom": "2021-02-12",
+    "availableUntil": "2021-04-17",
+    "reserved": false
+  }
+]
