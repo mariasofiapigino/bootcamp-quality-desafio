@@ -9,7 +9,7 @@ import java.util.List;
 public interface HotelRepository {
     List<HotelDTO> getHotels() throws IOException;
 
-    void updateReserved(String hotelCode);
+    HotelDTO updateReserved(String hotelCode);
 
     List<HotelDTO> getHotelByFilter(String dateFrom, String dateTo, String place, String hotelCode) throws DataNotFound;
 

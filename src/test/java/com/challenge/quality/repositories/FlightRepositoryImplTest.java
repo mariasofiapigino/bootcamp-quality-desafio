@@ -1,7 +1,6 @@
 package com.challenge.quality.repositories;
 
 import com.challenge.quality.dtos.FlightDTO;
-import com.challenge.quality.dtos.HotelDTO;
 import com.challenge.quality.exceptionHandler.DataNotFound;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,8 +14,6 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class FlightRepositoryImplTest {
     private FlightRepository flightRepository;
@@ -53,6 +50,12 @@ class FlightRepositoryImplTest {
                 });
 
         Assertions.assertEquals(filtered, this.flightRepository.getFlightsByFilter("10/02/2021", "15/02/2021", "Buenos Aires", "Puerto Iguazú"));
+    }
+
+    @Test
+    @DisplayName("Should throw an IOException")
+    void ioException() {
+        Assertions.assertThrows(IOException.class, () -> new FlightRepositoryImpl("wrongPath"));
     }
 
 }

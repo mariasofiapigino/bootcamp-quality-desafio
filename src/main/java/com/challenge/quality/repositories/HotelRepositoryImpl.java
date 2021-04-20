@@ -78,12 +78,14 @@ public class HotelRepositoryImpl implements HotelRepository{
     }
 
     @Override
-    public void updateReserved(String hotelCode) {
+    public HotelDTO updateReserved(String hotelCode) {
         for (int i = 0; i < repository.size(); i++) {
             if (repository.get(i).getHotelCode().equals(hotelCode)){
                 repository.get(i).setReserved(true);
+                return repository.get(i);
             }
         }
+        return null;
     }
 
     @Override

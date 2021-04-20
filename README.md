@@ -54,7 +54,7 @@ A continuación algunos ejemplos para ejecutar las consignas:
   * `GET` http://localhost:8080/api2/v1/flights
   
 * Listado de todos los vuelos disponibles en un determinado rango de fechas y según el destino y el origen seleccionados
-  * `GET` http://localhost:8080/api2/v1/flights?origin=Buenos Aires&destination=Puerto Iguazú&dateFrom=10/02/2021&dateTo=15/02/2021
+  * `GET` <http://localhost:8080/api2/v1/flights?origin=Buenos Aires&destination=Puerto Iguazú&dateFrom=10/02/2021&dateTo=15/02/2021>
   
 * Realizar una reserva de un vuelo, indicando cantidad de personas, origen, destino, fecha de ida y fecha de vuelta. Obtener como respuesta el monto total de la reserva realizada
   * `POST` http://localhost:8080/api2/v1/flight-reservation

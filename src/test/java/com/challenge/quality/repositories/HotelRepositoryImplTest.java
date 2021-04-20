@@ -88,4 +88,10 @@ class HotelRepositoryImplTest {
                 });
         Assertions.assertIterableEquals(allHotel, this.hotelRepository.getHotelsByReserved());
     }
+
+    @Test
+    @DisplayName("Should throw an IOException")
+    void ioException() throws IOException {
+        Assertions.assertThrows(IOException.class, () -> new HotelRepositoryImpl("wrongPath"));
+    }
 }

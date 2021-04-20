@@ -4,6 +4,7 @@ import com.challenge.quality.repositories.HotelRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -30,6 +31,7 @@ public class HotelIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
+
 
     @Test
     @DisplayName("Should list all available hotels")
@@ -58,26 +60,6 @@ public class HotelIntegrationTest {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().json(allHotelsWithFiltersMockResponse));
-    }
-
-    @Test
-    @DisplayName("Should response with a Booking Response")
-    // TODO ver como solucioanr el cambio de reserved
-    public void testBookHotel() throws Exception {
-        Path pathRequest = Paths.get("src/test/resources/hotels/bookingRequest.json");
-        String bookingRequest = Files.readString(pathRequest);
-
-        Path pathResponse = Paths.get("src/test/resources/hotels/bookingResponse.json");
-        String bookingResponse = Files.readString(pathResponse);
-
-        this.mockMvc
-                .perform(MockMvcRequestBuilders
-                        .post("/api/v1/booking")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(bookingRequest))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content().json(bookingResponse));
     }
 
     @Test

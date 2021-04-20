@@ -32,23 +32,4 @@ public class HotelController {
     public ResponseEntity bookHotel(@RequestBody BookingRequestDTO bookingRequestDTO) throws InvalidData, DataNotFound, IOException {
         return ResponseEntity.ok(hotelService.bookHotel(bookingRequestDTO));
     }
-
-    // Errors handler
-    @ExceptionHandler(InvalidData.class)
-    public ResponseEntity<StatusCodeDTO> handleException(InvalidData e) {
-        StatusCodeDTO statusCodeDTO = new StatusCodeDTO(400, e.getMessage());
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(statusCodeDTO);
-    }
-
-    @ExceptionHandler(DataNotFound.class)
-    public ResponseEntity<StatusCodeDTO> handleException(DataNotFound e) {
-        StatusCodeDTO statusCodeDTO = new StatusCodeDTO(404, e.getMessage());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(statusCodeDTO);
-    }
-
-    @ExceptionHandler(InvalidFormatException.class)
-    public ResponseEntity<StatusCodeDTO> handleException(InvalidFormatException e) {
-        StatusCodeDTO statusCodeDTO = new StatusCodeDTO(400, e.getMessage());
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(statusCodeDTO);
-    }
 }
